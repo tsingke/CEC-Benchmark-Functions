@@ -1,21 +1,27 @@
-% Prepared by Jane J. Liang. Email: liangjing@pmail.ntu.edu.sg February 20, 2005.
+## CEC2005 Benchmark Functions
 
-benchmark_func.m is the main function for these minimization problems
-f=benchmark_func(x,func_num)
+The file `benchmark_func.m` is the main function for these minimization problems
+> f=benchmark_func(x,func_num)
+
 x is the variable, f is the function value, func_num is the function num,
 data files save the necessary information.
 func_plot.m is used to plot the 2-D function map
 
-25 functions in all, from 1 to 25, are
+**25 functions** in all, from 1 to 25, are listed as follows.
 
-	Unimodal Functions (5):
+---
+
+### (1) Unimodal Functions (5):
+	
 1.	Shifted Sphere Function 						Bounds[-100,100]		f_bias=-450
+
 2.	Shifted Schwefel's Problem 1.2						Bounds[-100,100]		f_bias=-450
+
 3.	Shifted Rotated High Conditioned Elliptic Function				Bounds[-100,100]		f_bias=-450
 4.	Shifted Schwefel's Problem 1.2 with Noise in Fitness 				Bounds[-100,100]		f_bias=-450
 5.	Schwefel's  Problem 2.6 with Global Optimum on Bounds			Bounds[-100,100]		f_bias=-310
 
-	Multimodal Functions (20):
+### (2) Multimodal Functions (20):
 
 	Basic Functions (7):	
 6.	Shifted Rosenbrock's  Function						Bounds[-100,100]		f_bias=390 
@@ -32,10 +38,15 @@ func_plot.m is used to plot the 2-D function map
 
 	Hybrid Composition Functions (11):
 15.	Hybrid Composition Function 1					Bounds[-5,5]		f_bias= 120 
+
 16.	Rotated Hybrid Comp. Fn 1						Bounds[-5,5]		f_bias= 120
+
 17.	Rotated Hybrid Comp. Fn 1 with Noise in Fitness				Bounds[-5,5]		f_bias= 120
+
 18.	Rotated Hybrid Comp. Fn 2						Bounds[-5,5]		f_bias=10 
+
 19.	Rotated Hybrid Comp. Fn 2 with Narrow Global Optimal Basin			Bounds[-5,5]]		f_bias=10 
+
 20.	Rotated Hybrid Comp. Fn 2 with the Global Optimum on Bounds		Bounds[-5,5]		f_bias=10
 21.	Rotated Hybrid Comp. Fn 3						Bounds[-5,5]		f_bias=360 
 22.	Rotated Hybrid Comp. Fn 3 with High Condition Number Matrix		Bounds[-5,5]		f_bias=360
@@ -44,20 +55,19 @@ func_plot.m is used to plot the 2-D function map
 25.	Rotated Hybrid Comp. Fn 4 without Bounds	 			Intilization Range[-2,5]	f_bias=260 
  
 
-
-
 ***Please note:
 When you use the test function, remember to set a global variable initial_flag, and make 
 sure initial_flag=0 before each search. 
 
 For details of the test functions, please read intro-2-functions.doc file
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
-Files:
+---
 
-%~~~~~~~~~~~~~~~%
+
+**Files**:
+%~~~~~~~~~~~~~~~
 Matlab *.m files:
-%~~~~~~~~~~~~~~~%
+%~~~~~~~~~~~~~~~
 benchmark_func.m
 %benchmark_func.m is the main function with all the minimization problems
 %f=benchmark_func(x,func_num)
@@ -66,9 +76,9 @@ benchmark_func.m
 func_plot.m
 %used to plot the 2-D function map
 
-%~~~~~~~~~~~~~~~%
+%~~~~~~~~~~~~~~~
 Matlab *.mat data files:
-%~~~~~~~~~~~~~~~%
+%~~~~~~~~~~~~~~~
 
 test_data.mat
 % 10 points (50D each) & corresponding fitnesses given to assist verification for code translation. 
@@ -159,8 +169,8 @@ hybrid_func4_M_D10.mat
 hybrid_func4_M_D30.mat
 hybrid_func4_M_D50.mat
 
+---
 
-%%%%%%%%%%
 PLEASE NOTE:
 hybrid_func1_M_D......matrix data in matlab mat format contain a structure variable M, 
 and M.M1,M.M2...M.M10 are ten D*D matrix
