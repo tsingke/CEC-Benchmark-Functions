@@ -23,7 +23,8 @@ func_plot.m is used to plot the 2-D function map
 
 ### (2) Multimodal Functions (20):
 
-	Basic Functions (7):	
+**Basic Functions (7):**
+
 6.	Shifted Rosenbrock's  Function						Bounds[-100,100]		f_bias=390 
 7.	Shifted Rotated Griewank's  Function without Bounds	     		Intilization Range [0, 600]	f_bias=-180
 8.	Shifted Rotated Ackley's with Global Optimum on Bounds			Bounds[-32,32]		f_bias=-140
@@ -32,11 +33,13 @@ func_plot.m is used to plot the 2-D function map
 11.	Shifted Rotated Weierstrass Function 					Bounds[-0.5,0.5]		f_bias=90
 12.	Schwefel's  Problem 2.13						Bounds[-100,100]		f_bias=-460 
 
-	Expanded Functions (2):
+**Expanded Functions (2):**
+
 13.	Expanded Extended Griewank's + Rosenbrock's (F8F2)			Bounds[-3,1]		f_bias=-130
 14.	Expanded Rotated Extended Scaffe's  F6 					Bounds[-100,100]		f_bias=-300
 
-	Hybrid Composition Functions (11):
+**Hybrid Composition Functions (11):**
+
 15.	Hybrid Composition Function 1					Bounds[-5,5]		f_bias= 120 
 
 16.	Rotated Hybrid Comp. Fn 1						Bounds[-5,5]		f_bias= 120
@@ -56,6 +59,7 @@ func_plot.m is used to plot the 2-D function map
  
 
 ***Please note:
+
 When you use the test function, remember to set a global variable initial_flag, and make 
 sure initial_flag=0 before each search. 
 
@@ -65,9 +69,10 @@ For details of the test functions, please read intro-2-functions.doc file
 
 
 **Files**:
-%~~~~~~~~~~~~~~~
-Matlab *.m files:
-%~~~~~~~~~~~~~~~
+
+
+> Matlab *.m files:
+
 benchmark_func.m
 %benchmark_func.m is the main function with all the minimization problems
 %f=benchmark_func(x,func_num)
@@ -76,9 +81,8 @@ benchmark_func.m
 func_plot.m
 %used to plot the 2-D function map
 
-%~~~~~~~~~~~~~~~
-Matlab *.mat data files:
-%~~~~~~~~~~~~~~~
+
+> Matlab *.mat data files:
 
 test_data.mat
 % 10 points (50D each) & corresponding fitnesses given to assist verification for code translation. 
@@ -86,16 +90,18 @@ test_data.mat
 % Corresponding Function Values: f1,f2,f3,....f25
 ***Notice, for function 4,17,24,25, since they have noise, please set noise to 0 (e.g setting 0.0*N(0,1)) before test.
 
-fbias_data.mat
+> fbias_data.mat
 % contain a 1*25 vector f_bias which are the global optimal function values.
 
-global_optima.mat
+> global_optima.mat
 % all 25 global optimal points (25 x 100 matrix) for the 25 test functions,
 % please note, function 5,8,20 set the global optima on the bounds, so the corresponding 
 % global optima are:
 % if func_num==5,o(1:ceil(D/4))=-100;x(max(floor(0.75*D),1):D)=100;end
 % if func_num==8,o(2.*[1:floor(D/2)]-1)=-32;end
 % if func_num==20,o(1,2.*[1:floor(D/2)])=5;end
+
+---
 
 sphere_func_data.mat
 
@@ -172,6 +178,7 @@ hybrid_func4_M_D50.mat
 ---
 
 PLEASE NOTE:
+
 hybrid_func1_M_D......matrix data in matlab mat format contain a structure variable M, 
 and M.M1,M.M2...M.M10 are ten D*D matrix
 
