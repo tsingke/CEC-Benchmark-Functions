@@ -1,0 +1,43 @@
+===================================================================================
+C++ Implementation of the test suite for the Special Session on Large Scale
+Global Optimization for 2010 IEEE World Congress on Computational Intelligence.
+===================================================================================
+
+Note:
+*****
+*If you are to use any part of this code, please cite the following publications:
+Tang, K., Li, X., Suganthan, P.N., Yang, Z., Weise, T.: Benchmark functions for the CEC’2010 special session and competition on large scale global optimization. TR, NICAL, USTC, Hefei, Anhui, China (2009) http://nical.ustc.edu.cn/cec10ss.php.
+
+Requirements:
+*************
+*GNU Make
+*GNU G++
+
+Testing Environment:
+*********************
+*Debian 6.0 (squeeze)
+*GNU Make 3.81
+*g++ (Ubuntu/Linaro 4.4.4-14ubuntu5) 4.4.5
+
+To compile: 
+**********
+type in 'make' in the root directory of source code
+
+To run: 
+**********
+./main
+
+To clean up:
+*********************
+make clean
+
+Configuration file:
+**********
+Please edit 'configure.ini' to configure the parameter of running benchmarks
+
+Contact:
+********
+Wenxiang Chen @ NICAL, USTC
+Please contact me at <chenwx.ustc@gmail.com> for any enquiries.
+
+Last Updated: Fri 28 Jan 2011 02:44:30 PM CST 
