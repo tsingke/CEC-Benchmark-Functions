@@ -94,12 +94,15 @@ test_data.mat
 % contain a 1*25 vector f_bias which are the global optimal function values.
 
 > global_optima.mat
+
+```matlab
 % all 25 global optimal points (25 x 100 matrix) for the 25 test functions,
 % please note, function 5,8,20 set the global optima on the bounds, so the corresponding 
 % global optima are:
 % if func_num==5,o(1:ceil(D/4))=-100;x(max(floor(0.75*D),1):D)=100;end
 % if func_num==8,o(2.*[1:floor(D/2)]-1)=-32;end
 % if func_num==20,o(1,2.*[1:floor(D/2)])=5;end
+```
 
 ---
 
