@@ -58,7 +58,7 @@ for func_num =1:16
     zlabel('f(x,y)');
     
     % 4.输出并保存函数图像到指定路径下面
-    filename=strcat('F:\6_张庆科\2_AlgorithmDesign\TestFunctionsMap\','F',num2str(func_num));
+    filename=strcat('你想保存的目录','F',num2str(func_num));
     saveas(gcf,filename,'png');
     close;% 关闭当前的输出
     
